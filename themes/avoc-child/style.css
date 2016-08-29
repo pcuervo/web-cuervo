@@ -1,14 +1,14 @@
-/* 
+/*
 
 	Theme Name: Avoc Child
-	Theme URI: http://www.spab-rice.com 
-	Description: Avoc child Theme. 
+	Theme URI: http://www.spab-rice.com
+	Description: Avoc child Theme.
 	Version: 1.0
-	Author: Spab Rice 
-	Author URI: http://www.spab-rice.com 
+	Author: Spab Rice
+	Author URI: http://www.spab-rice.com
 	Template:    avoc
 	Text Domain:  avoc-child
-	
+
 */
 
 @import url("../avoc/style.css");
@@ -16,6 +16,7 @@
 /* -----------------------------------
 	CHILD CSS
 ------------------------------------- */
+
 /*HEADER*/
 .description{
 	width: 90%;
@@ -32,7 +33,7 @@
 	text-align: center;
 	line-height: 1em;
 }
- 
+
 
 h3{
 	text-transform: lowercase!important;
@@ -49,7 +50,7 @@ header:before{
 	border: 2px  black solid;
 	border-radius: 50px;
 	padding: 0 .4em!important;
-	
+
 }
 .btn-header:hover{
 	border: 2px  #e74c3c solid;
@@ -91,75 +92,57 @@ ul#primary:active{
 }
 
 /*--Button language--*/
-ul.submenu-languages li{
-	background-color:#00aabb!important;
-	border-radius: 30px;
-	padding:2%;
-	position: absolute!important;
-	top:-4em!important;
-	width: 7em;
+li.menu-item-language a{
+	font-family: Maven Pro;
+	font-weight: 700!important;
+	letter-spacing: 1.35px!important;
 }
 
-ul.sub-menu > li a{
-	background-color: #00aabb;
-	color:#FFFFFF;
-	font-weight: bolder;
-	opacity:1!important;
-	visibility: visible!important;
-}
-
-
+ul.sub-menu > li a{ opacity:1!important; }
+nav#main-nav ul li > ul.sub-menu{ width:180px; }
+li.menu-item-language.menu-item-language-current.menu-item-has-children > a  { display: none!important; }
+nav#main-nav ul li > ul.sub-menu a:hover { color: #ea4452 !important }
 nav#main-nav ul li > ul.sub-menu{
-	width:200px;
+	visibility: visible!important;
+	opacity: 1!important;
 }
 
-nav#main-nav ul li > ul.sub-menu > li {
-	text-align: center;
-}
-nav#main-nav ul{
-	margin: 2.5% auto;
-}
-ul.sub-menu.submenu-languages > li.menu-item.menu-item-language a{
-	position: absolute;
-	top: 2em;
-	left: 1em;
-	font-size: .7em!important;
-	
-}
-
-li.menu-item-language.menu-item-language-current.menu-item-has-children a{
-	position: absolute;
-	top: -4em;
-	left: -15em;
-	font-size: .7em!important;
-
-}
-li.menu-item-language.menu-item-language-current.menu-item-has-children a:hover{
-	color:#00aabb!important;
-
+@media(min-width: 1025px){
+	nav#main-nav ul li > ul.sub-menu{ top: 0px!important; }
+	ul.submenu-languages li{
+		position: absolute!important;
+		top:-4em!important;
+		width: 7em;
+	}
+	ul.sub-menu.submenu-languages > li.menu-item.menu-item-language a{
+		position: absolute;
+		top: 2em;
+		left: 1em;
+		font-size: .7em!important;
+	}
+	nav#main-nav ul li > ul.sub-menu > li { text-align: center;	}
 }
 
-@media only screen and (max-width: 1024px){
-li.menu-item-language.menu-item-language-current.menu-item-has-children a{
-	position: relative!important;
-	top: 0;
-	left: 0;
-	font-size: .7em;
-	padding-right: 3px;
-}
-
-@media only screen and (max-width: 1024px){
-	nav#main-nav{
-		width: 240px!important;
+@media(max-width: 1024px){
+	nav#main-nav ul li > ul.sub-menu{
+		display: block!important;
+		top: 25px!important;
+	}
+	nav#main-nav ul li > ul.sub-menu > li {
+		text-align: right;
+		margin-right: 10px!important;
 	}
 }
 
-li.menu-item.menu-item-language a[href="http://localhost:8888/pcuervo"]{
-	color:red!important;
-	position:absolute!important;
-	top:-2em!important;
-	right: 7em!important;
+nav#main-nav ul li > ul.sub-menu > li { background: transparent!important; }
+nav#main-nav ul{ margin: 2.5% auto; }
+li.menu-item-language.menu-item-language-current.menu-item-has-children a{ position: absolute; }
+
+@media only screen and (max-width: 1024px){
+	li.menu-item-language.menu-item-language-current.menu-item-has-children a{
+	position: relative!important;
 }
+
 /* FORMULARIO */
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .contact, html { font-size: 100%; padding: 0; margin: 0;}
@@ -252,7 +235,7 @@ input:focus::-moz-placeholder {
 	color: rgba(255,255,255,0.2);
 }
 
-input:-ms-input-placeholder {  
+input:-ms-input-placeholder {
 	color: rgba(255,255,255,0.8);
 }
 
@@ -321,7 +304,7 @@ input:focus::-ms-input-placeholder {
         left:10%;
         right:10%;
         margin-top:7em;
-    } 
+    }
 }
 
 /*Select*/
